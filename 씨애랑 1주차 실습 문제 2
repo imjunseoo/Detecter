@@ -1,0 +1,14 @@
+import java.util.*; 
+
+public class practice {
+
+	public static void main(String[] args) 
+	{		
+		Scanner input = new Scanner(System.in);
+		int F = input.nextInt();
+		
+		float C = (float)5/9 * (F - 32);
+		System.out.println( C );
+		input.close();
+		}
+}
