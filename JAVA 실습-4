@@ -1,0 +1,69 @@
+import java.util.*; //자바 라이브러리를 받아옵니다.
+
+public class practice {
+
+	public static void main(String[] args) 
+	{		
+		Scanner input = new Scanner(System.in);//스캐너를 받아옵니다.
+		int A = input.nextInt();//A와 B,C를 받아옵니다.
+		int B = input.nextInt();
+		int C = input.nextInt();
+		String MAX = ""; //MAX1,2,3을 선언,초기화 합니다.
+		String MAX2 = "";
+		String MAX3 = "";
+		
+		if(A > B && A > C) //A가 최대라면
+		{
+			MAX = "A"; //MAX 에 A를 넣습니다
+			if(B > C) //else if 와 if를 if 절 안에 넣어서 MAX2와 MAX3를 정해줍니다
+			{
+				MAX2 = "B";
+				MAX3 = "C";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+				//출력합니다.
+			}
+			else 
+			{
+				MAX2 = "C";
+				MAX3 = "B";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+			}
+		}
+		if(B > A && B > C)
+		{
+			MAX = "B";
+			if(A > C)      
+			{
+				MAX2 = "A";
+				MAX3 = "C";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+			}
+			else 
+			{
+				MAX2 = "C";
+				MAX3 = "A";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+			}
+		}
+		if(C > B && C > A)
+		{
+			MAX = "C";
+			if(A > C)
+			{
+				MAX2 = "A";
+				MAX3 = "B";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+			}
+			else 
+			{
+				MAX2 = "A";
+				MAX3 = "B";
+				System.out.println("차례대로" + MAX + MAX2 + MAX3 + "순서 입니다.");
+			}
+			
+		}
+		
+	}
+	
+}
+
